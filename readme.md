@@ -136,18 +136,17 @@ chmod a+x atlassian-confluence-7.17.1-x64.bin
 
 ---
 
-Для изучения полнофункциональных возможностей Confluence можно воспользоваться [atlassian-agent](https://github.com/ipwnosx/Atlassian-Agent) и через него активировать лицензию на Confluence. Для этого идем по ссылке с репозитория [сюда](https://gitee.com/pengzhile/atlassian-agent/releases). Скачиваем [atlassian-agent-v1.3.1.tar.gz](https://gitee.com/pengzhile/atlassian-agent/attach_files/832832/download/atlassian-agent-v1.3.1.tar.gz).
+Для изучения полнофункциональных возможностей Confluence можно воспользоваться [atlassian-agent](https://github.com/ipwnosx/Atlassian-Agent) и через него активировать лицензию на Confluence. Для этого идем по ссылке с репозитория [сюда](https://gitee.com/pengzhile/atlassian-agent/releases). Скачиваем [atlassian-agent.jar](https://github.com/manch93/Confluence-crack/blob/main/atlassian-agent.jar).
 
 ```bash
-wget https://gitee.com/pengzhile/atlassian-agent/attach_files/832832/download/atlassian-agent-v1.3.1.tar.gz
+wget https://github.com/manch93/Confluence-crack/blob/main/atlassian-agent.jar
 ```
 
 Для хранения агента создадим каталог и скопируем туда файл запуска приложения, предварительно распаковав архив.
 
 ```bash
 mkdir /opt/atlassian/atlassian-agent
-tar -xf atlassian-agent-v1.3.1.tar.gz 
-cp atlassian-agent-v1.3.1/atlassian-agent.jar /opt/atlassian/atlassian-agent/atlassian-agent.jar
+cp atlassian-agent.jar /opt/atlassian/atlassian-agent/atlassian-agent.jar
 ```
 
 Согласно инструкции из репозитория, добавим установки переменной окружения **JAVA_OPTS** в файл **/opt/atlassian/confluence/bin/setenv.sh**. В самом начале файла нужно добавить такую строку:
